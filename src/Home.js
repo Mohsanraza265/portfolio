@@ -4,6 +4,9 @@ import './App.css';
 import { darkTheme } from './utils/Themes';
 import Navbar from './components/Navbar';
 import HeroSection from './components/HeroSection'
+import Skills from './components/Skills';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -15,21 +18,28 @@ const Wrapper = styled.div`
   width: 100%;
   clip-path: polygon(0 0, 100% 0, 100% 100%,30% 98%, 0 100%);
 `
-
+ 
 function Home() {
-  return (
-    <ThemeProvider theme={darkTheme} >
-      
-        <Navbar />
-        <Body>
-            <HeroSection />
-            <Wrapper>
-                
-            </Wrapper>
-        </Body>
-      
-    </ThemeProvider>
-  );
+    return (
+        <ThemeProvider theme={darkTheme} >
+
+            <Navbar />
+            <Body>
+                <HeroSection />
+                <Wrapper>
+                    <Skills />
+                    <Experience />
+                </Wrapper>
+                <Projects />
+                {/* <Wrapper>
+                    <Education />
+                    <Contact />
+                </Wrapper>
+                <Footer /> */}
+            </Body>
+
+        </ThemeProvider>
+    );
 }
 
 export default Home;
