@@ -9,6 +9,7 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Education from './components/Education';
+import Contact from './components/Contact';
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -35,6 +36,7 @@ function Home() {
                 <Projects />
                 <Wrapper>
                     <Education />
+                    <Contact />
                 </Wrapper> 
                 <Footer />
             </Body>
@@ -42,5 +44,5 @@ function Home() {
         </ThemeProvider>
     );
 }
-
+ 
 export default Home;
