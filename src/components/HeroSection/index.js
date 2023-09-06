@@ -188,6 +188,9 @@ const ResumeButton = styled.a`
 const Image = styled.div`
   position: relative;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: self-start;
   height: 100%;
   max-width: 400px;
   max-height: 400px;
