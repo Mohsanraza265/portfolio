@@ -43,19 +43,19 @@ const NavLogo = styled(LinkR)`
       padding: 0 0px;
   }
 `;
-// const MobileIcon = styled.div`
-//   display: none;
-//   @media screen and (max-width: 768px) {
-//     display: block;
-//     position: absolute;
-//     top: 0;
-//     right: 0;
-//     transform: translate(-100%, 60%);
-//     font-size: 1.5rem;
-//     cursor: pointer;
-//     color: ${({ theme }) => theme.text_primary};
-//   }
-// `;
+const MobileIcon = styled.div`
+  display: none;
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: ${({ theme }) => theme.text_primary};
+  }
+`;
 const NavItems = styled.ul`
     width: 100%;
     display: flex;
@@ -110,7 +110,7 @@ const GitHubButton = styled.a`
   transition: all 0.6s ease-in-out;
     :hover {
       background: white;
-      color: ${({ theme }) => theme.white};     
+      color: ${({ theme }) => theme.white};  
     }
     @media screen and (max-width: 768px) { 
     font-size: 14px;
@@ -163,24 +163,25 @@ const Navbar = () => {
       <NavContainer>
         <NavLogo to='/'>
           <a href="/" style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20', cursor: 'pointer' }}>
-            {/* <DiCssdeck size="3rem" />  */}
+            <i className="fa fa-podcast portfolioIcon"></i>
             <Span>Portfolio</Span>
           </a>
         </NavLogo>
-        {/* <MobileIcon>
-          <FaBars onClick={() => {
+        <MobileIcon>
+          
+          <i className="fa fa-bars" onClick={() => {
             setIsOpen(!isOpen)
-          }} />
-        </MobileIcon> */}
+          }} ></i>
+        </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href='#skills'>Skills</NavLink>
-          <NavLink href='#experience'>Experience</NavLink>
-          <NavLink href='#projects'>Projects</NavLink>
-          <NavLink href='#education'>Education</NavLink>
+          <NavLink className="navLinks" href="#about">About</NavLink>
+          <NavLink className="navLinks" href='#skills'>Skills</NavLink>
+          <NavLink className="navLinks" href='#experience'>Experience</NavLink>
+          <NavLink className="navLinks" href='#projects'>Projects</NavLink>
+          <NavLink className="navLinks" href='#education'>Education</NavLink>
         </NavItems>
         <ButtonContainer>
-          <GitHubButton href={Bio.github} target="_blank">Github Profile</GitHubButton>
+          <GitHubButton className="commonBtn" href={Bio.github} target="_blank">Github Profile</GitHubButton>
         </ButtonContainer>
       </NavContainer>
       {isOpen && <MobileMenu isOpen={isOpen}>
@@ -199,7 +200,7 @@ const Navbar = () => {
         <MobileLink href='#education' onClick={() => {
           setIsOpen(!isOpen)
         }}>Education</MobileLink>
-        <GitHubButton style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.github} target="_blank" > Github Profile </GitHubButton>
+        <GitHubButton className="commonBtn" style={{ padding: '10px 16px', background: `${theme.primary}`, color: 'white', width: 'max-content' }} href={Bio.github} target="_blank" > Github Profile </GitHubButton>
       </MobileMenu>}
     </Nav>
   );

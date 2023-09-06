@@ -7,6 +7,20 @@
     font-family: 'Poppins', sans-serif;
     
 }
+.navLinks:hover {
+  color: #be1adb;
+}
+.navLinks:active {
+  color: #be1adb;
+}
+.commonBtn:hover {
+  background-color: #be1adb;
+  color: #F2F3F4;
+}
+.portfolioIcon {
+  font-size: 30px;
+  margin-right: 5px;
+}
 
 html{
   scroll-behavior: smooth;
