@@ -285,12 +285,13 @@ export const Bio = {
     },
     {
       id: 3,
-      title: "Noke sneaker",
+      title: "Nike sneaker",
       date: "September 2022 - September 2023",
       description:
         "Crafting a captivating and user-centric design for our sneaker web application. Focusing on clean, intuitive interfaces, responsive layouts, and a harmonious color palette. Prioritizing both aesthetics and usability to ensure an engaging and seamless user experience. Leveraging modern design principles to showcase fashion in its best light while enhancing navigation and accessibility.",
       image:
-        "https://app.gemoo.com/share/image-annotation/563544229177643008?codeId=v69mXrNE6xENy&origin=imageurlgenerator",
+        "https://i.imgur.com/fY0EM8k.png",
+
       tags: [
         "React Js",
         "Laravel",
