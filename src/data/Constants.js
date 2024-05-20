@@ -301,6 +301,42 @@ export const Bio = {
       github: "https://github.com/Mohsanraza265/react-first-ecommerce",
       webapp: "https://nike-sneaker-ecommerce.netlify.app/",
     },
+    {
+      id: 4,
+      title: "Beastlyads",
+      date: "September 2022 - September 2024",
+      description:
+        "A marketplace website is a platform that connects buyers and sellers, allowing them to trade goods, services, or digital products. This type of website facilitates transactions by providing an online space where sellers can list their offerings and buyers can browse, compare, and purchase items.",
+      image:
+        "https://i.ibb.co/mqNRdX7/beastlyads-Img.png",
+
+      tags: [
+        "Next Js",
+        "Laravel",
+        "redux-toolkit",
+      ],
+      category: "Next Js",
+      github: "https://github.com/Mohsanraza265/react-first-ecommerce",
+      webapp: "https://beastlyads.com/home",
+    },
+    {
+      id: 5,
+      title: "Wildsyt",
+      date: "September 2021 - 2024",
+      description:
+        "Discover the fascinating world of birds and animals with our comprehensive platform. Whether you’re a seasoned birdwatcher, a passionate animal lover, or a curious beginner, Bird & Animal Haven offers everything you need to explore, learn, and connect with wildlife.",
+      image:
+        "https://i.ibb.co/w6RZSb5/wildsyt.png",
+
+      tags: [
+        "Next Js",
+        "Laravel",
+        "redux",
+      ],
+      category: "Next Js",
+      github: "https://github.com/Mohsanraza265/react-first-ecommerce",
+      webapp: "https://wildsyt.netlify.app/home",
+    },
     
     
   ];

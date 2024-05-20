@@ -239,17 +239,24 @@ const Projects = () => {
                         <ToggleButton value="Vue Js" onClick={() => setToggle('Vue Js')}>Vue Js</ToggleButton>
                     }
                     <Divider />
-                    {toggle === 'Nuxt Js' ?
-                        <ToggleButton active value="Nuxt Js" onClick={() => setToggle('Nuxt Js')}>Nuxt Js</ToggleButton>
-                        :
-                        <ToggleButton value="Nuxt Js" onClick={() => setToggle('Nuxt Js')}>Nuxt Js</ToggleButton>
-                    }
-                    <Divider />
                     {toggle === 'React Js' ?
                         <ToggleButton active value="React Js" onClick={() => setToggle('React Js')}>React Js</ToggleButton>
                         :
                         <ToggleButton value="React Js" onClick={() => setToggle('React Js')}>React Js</ToggleButton>
                     }
+                    <Divider />
+                    {toggle === 'Next Js' ?
+                        <ToggleButton active value="Next Js" onClick={() => setToggle('Next Js')}>Next Js</ToggleButton>
+                        :
+                        <ToggleButton value="Next Js" onClick={() => setToggle('Next Js')}>Next Js</ToggleButton>
+                    }
+                    <Divider />
+                    {toggle === 'Nuxt Js' ?
+                        <ToggleButton active value="Nuxt Js" onClick={() => setToggle('Nuxt Js')}>Nuxt Js</ToggleButton>
+                        :
+                        <ToggleButton value="Nuxt Js" onClick={() => setToggle('Nuxt Js')}>Nuxt Js</ToggleButton>
+                    }
+                    
                 </ToggleButtonGroup>
                 <CardContainer>
                     {toggle === 'all' && projects.map((project) => (
