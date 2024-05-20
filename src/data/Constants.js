@@ -10,7 +10,7 @@ export const Bio = {
       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/Mohsanraza265",
     resume:
-      "https://drive.google.com/file/d/1Aq-U_l7Y_w0hTiwbPL2i5RAmXBzcUvQf/view",
+      "https://drive.google.com/file/d/1eynXc9MrjztRNqTV4vh1VmhY6rjx9gXo/view",
     linkedin: "https://www.linkedin.com/in/mohsan-raza-92941a22a/",
     facebook: "https://www.facebook.com/mohsan.razarajper.9/",
     
