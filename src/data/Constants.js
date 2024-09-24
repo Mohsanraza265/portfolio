@@ -317,7 +317,7 @@ export const Bio = {
       ],
       category: "Next Js",
       github: "https://github.com/Mohsanraza265/react-first-ecommerce",
-      webapp: "https://beastlyads.com/home",
+      webapp: "https://beastlyads.netlify.app/home",
     },
     {
       id: 5,
@@ -327,7 +327,6 @@ export const Bio = {
         "Discover the fascinating world of birds and animals with our comprehensive platform. Whether you’re a seasoned birdwatcher, a passionate animal lover, or a curious beginner, Bird & Animal Haven offers everything you need to explore, learn, and connect with wildlife.",
       image:
         "https://i.ibb.co/w6RZSb5/wildsyt.png",
-
       tags: [
         "Next Js",
         "Laravel",
