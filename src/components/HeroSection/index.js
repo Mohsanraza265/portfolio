@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Bio } from "../../data/Constants";
 import Typewriter from "typewriter-effect"
-import HeroImg from "../../images/raza-removebg-preview.png"
+import HeroImg from "../../images/removebg-preview.png"
 // import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroContainer = styled.div`
