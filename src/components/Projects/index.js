@@ -282,8 +282,8 @@ const Projects = () => {
                         </Card>
 
                     ))}
-                    {projects.filter((item) => item.category === toggle).map((project) => (
-                        <Card href={project.webapp} target="_blank">
+                    {projects.filter((item) => item.category === toggle).map((project, i) => (
+                        <Card href={project.webapp} key={i} target="_blank">
                             <Image src={project.image} />
                             <Tags>
                                 {project.tags?.map((tag, index) => (

@@ -317,7 +317,7 @@ export const Bio = {
       ],
       category: "Next Js",
       github: "https://github.com/Mohsanraza265/react-first-ecommerce",
-      webapp: "https://beastlyads.netlify.app/home",
+      webapp: "https://beastlyads-new.netlify.app/",
     },
     {
       id: 5,
