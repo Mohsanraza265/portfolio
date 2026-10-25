@@ -1,0 +1,314 @@
+{
+  "settings": {
+    "name": "Mohsan Raza",
+    "headline": "Senior Web & Frontend Developer",
+    "email": "mohsanraza265@gmail.com",
+    "github": "https://github.com/Mohsanraza265",
+    "linkedin": "https://www.linkedin.com/in/mohsan-raza-92941a22a/",
+    "intro": "I build fast, polished digital experiences that turn thoughtful design into measurable momentum."
+  },
+  "skills": [
+    {
+      "id": "s1",
+      "name": "React.js",
+      "category": "Frontend",
+      "order": 1
+    },
+    {
+      "id": "s2",
+      "name": "Next.js",
+      "category": "Frontend",
+      "order": 2
+    },
+    {
+      "id": "s3",
+      "name": "JavaScript",
+      "category": "Frontend",
+      "order": 3
+    },
+    {
+      "id": "s4",
+      "name": "TypeScript",
+      "category": "Frontend",
+      "order": 4
+    },
+    {
+      "id": "s5",
+      "name": "Vue.js",
+      "category": "Frontend",
+      "order": 5
+    },
+    {
+      "id": "s6",
+      "name": "Nuxt.js",
+      "category": "Frontend",
+      "order": 6
+    },
+    {
+      "id": "s7",
+      "name": "HTML5",
+      "category": "Frontend",
+      "order": 7
+    },
+    {
+      "id": "s8",
+      "name": "CSS3",
+      "category": "Frontend",
+      "order": 8
+    },
+    {
+      "id": "s9",
+      "name": "Tailwind CSS",
+      "category": "Design systems",
+      "order": 1
+    },
+    {
+      "id": "s10",
+      "name": "Bootstrap",
+      "category": "Design systems",
+      "order": 2
+    },
+    {
+      "id": "s11",
+      "name": "WordPress",
+      "category": "CMS & commerce",
+      "order": 1
+    },
+    {
+      "id": "s12",
+      "name": "Webflow",
+      "category": "CMS & commerce",
+      "order": 2
+    },
+    {
+      "id": "s13",
+      "name": "Shopify",
+      "category": "CMS & commerce",
+      "order": 3
+    },
+    {
+      "id": "s14",
+      "name": "GSAP",
+      "category": "Quality & delivery",
+      "order": 1
+    },
+    {
+      "id": "s15",
+      "name": "REST APIs",
+      "category": "Quality & delivery",
+      "order": 2
+    },
+    {
+      "id": "s16",
+      "name": "Axios",
+      "category": "Quality & delivery",
+      "order": 3
+    },
+    {
+      "id": "s17",
+      "name": "Git",
+      "category": "Quality & delivery",
+      "order": 4
+    },
+    {
+      "id": "s18",
+      "name": "SEO",
+      "category": "Quality & delivery",
+      "order": 5
+    },
+    {
+      "id": "s19",
+      "name": "Performance Optimization",
+      "category": "Quality & delivery",
+      "order": 6
+    },
+    {
+      "id": "s20",
+      "name": "Responsive Design",
+      "category": "Quality & delivery",
+      "order": 7
+    }
+  ],
+  "experience": [
+    {
+      "id": "e1",
+      "company": "PageDriven",
+      "title": "Senior Web & CMS Developer",
+      "date": "Sep 2026–Present",
+      "responsibilities": [
+        "Build responsive websites and conversion-focused landing pages using Webflow, WordPress, Shopify, JavaScript, and React.js for clients and agency partners.",
+        "Translate Figma and UI/UX designs into production-ready interfaces; implement reusable components, CMS templates, and dynamic content structures.",
+        "Develop custom frontend functionality, forms, animations, REST API connections, and third-party integrations.",
+        "Collaborate with design and CRO teams to implement A/B tests and user-journey improvements; integrate GA4, pixels, events, and conversion tracking.",
+        "Optimize page speed, accessibility, responsiveness, technical SEO, and usability; debug and maintain existing websites using Git and AI-assisted workflows."
+      ],
+      "order": 1
+    },
+    {
+      "id": "e2",
+      "company": "HHC Dropshipping",
+      "title": "Web and JavaScript Developer",
+      "date": "Mar 2025–Aug 2026",
+      "responsibilities": [
+        "Developed responsive web applications using React.js and Next.js and built reusable UI components with Tailwind CSS.",
+        "Integrated REST APIs using Axios and coordinated with backend developers to connect Laravel APIs.",
+        "Improved frontend performance and SEO structure to support usability and search visibility."
+      ],
+      "order": 2
+    },
+    {
+      "id": "e3",
+      "company": "Pace Global Pvt Ltd",
+      "title": "Frontend Developer",
+      "date": "Jun 2022–Feb 2025",
+      "responsibilities": [
+        "Built responsive web applications with React.js, Next.js, Vue.js, Nuxt.js, JavaScript, jQuery, Tailwind CSS, and Bootstrap.",
+        "Developed reusable interface components, integrated REST APIs, and resolved frontend defects.",
+        "Optimized application performance and collaborated with the development team using Git and WordPress."
+      ],
+      "order": 3
+    },
+    {
+      "id": "e4",
+      "company": "CODIFFY",
+      "title": "Frontend Developer",
+      "date": "Dec 2021–May 2022",
+      "responsibilities": [
+        "Implemented responsive web interfaces using HTML5, CSS3, Bootstrap, JavaScript, and jQuery.",
+        "Converted UI designs into cross-browser-compatible pages and fixed usability and layout issues alongside senior developers."
+      ],
+      "order": 4
+    }
+  ],
+  "projects": [
+    {
+      "id": "p1",
+      "title": "Nike Sneaker",
+      "slug": "nike-sneaker",
+      "description": "A responsive storefront experience designed for clear browsing and quick product discovery.",
+      "image": "local:zachary",
+      "technologies": [
+        "React.js",
+        "REST APIs",
+        "Tailwind CSS"
+      ],
+      "category": "React / Next.js",
+      "liveUrl": "https://nike-sneaker-ecommerce.netlify.app/",
+      "githubUrl": "https://github.com/Mohsanraza265/react-first-ecommerce",
+      "featured": true,
+      "order": 1,
+      "published": true,
+      "updatedAt": "2026-09-01T00:00:00.000Z"
+    },
+    {
+      "id": "p2",
+      "title": "Beastlyads",
+      "slug": "beastlyads",
+      "description": "A marketplace interface with a focused path from discovery to conversion.",
+      "image": "local:s2chief",
+      "technologies": [
+        "Next.js",
+        "Laravel",
+        "SEO"
+      ],
+      "category": "React / Next.js",
+      "liveUrl": "https://beastlyads-new.netlify.app/",
+      "githubUrl": "https://github.com/Mohsanraza265/react-first-ecommerce",
+      "featured": true,
+      "order": 2,
+      "published": true,
+      "updatedAt": "2026-09-02T00:00:00.000Z"
+    },
+    {
+      "id": "p3",
+      "title": "NeuroPlay",
+      "slug": "neuroplay",
+      "description": "A pediatric therapy and child development website offering occupational therapy, speech and language development, feeding therapy, sensory integration, cognitive development, and other specialized programs for children.",
+      "image": "local:neuroplay",
+      "technologies": [],
+      "category": "WordPress",
+      "liveUrl": "https://neuroplay.net/",
+      "githubUrl": "",
+      "featured": false,
+      "order": 3,
+      "published": true,
+      "updatedAt": "2026-09-03T00:00:00.000Z"
+    },
+    {
+      "id": "p4",
+      "title": "CaseLeap",
+      "slug": "caseleap",
+      "description": "A video production and video marketing company helping businesses create engaging video content, including video ads and customer testimonials.",
+      "image": "local:caseleap",
+      "technologies": [],
+      "category": "Webflow",
+      "liveUrl": "https://caseleap.com/",
+      "githubUrl": "",
+      "featured": false,
+      "order": 4,
+      "published": true,
+      "updatedAt": "2026-09-04T00:00:00.000Z"
+    },
+    {
+      "id": "p5",
+      "title": "Magnum XL",
+      "slug": "magnum-xl",
+      "description": "A polished member experience built around clear flows and responsive views.",
+      "image": "local:magnum",
+      "technologies": [
+        "Vue.js",
+        "Laravel",
+        "Vuex"
+      ],
+      "category": "Vue.js",
+      "liveUrl": "https://magnum-xl.com/",
+      "githubUrl": "https://github.com/dev-paceglobal/nuxt-portal",
+      "featured": true,
+      "order": 5,
+      "published": true,
+      "updatedAt": "2026-09-05T00:00:00.000Z"
+    },
+    {
+      "id": "p6", "title": "HHC Dropshipping", "slug": "hhc-dropshipping",
+      "description": "An eCommerce and dropshipping platform that helps online sellers manage products, orders, suppliers, shipments, and their dropshipping business.",
+      "image": "local:s2chief",
+      "technologies": [], "category": "React / Next.js", "liveUrl": "https://hhcdropshipping.com/", "githubUrl": "", "featured": true, "order": 3, "published": true, "updatedAt": "2026-10-25T00:00:00.000Z"
+    },
+    {
+      "id": "p7", "title": "Ray Ray's Natural Soap", "slug": "ray-rays-natural-soap",
+      "description": "An eCommerce website for handmade natural skincare products, including soaps, body scrubs, body butters, lotions, and other personal care products.",
+      "image": "local:rayraysnaturalsoap",
+      "technologies": [], "category": "WordPress", "liveUrl": "https://rayraysnaturalsoap.com/", "githubUrl": "", "featured": false, "order": 4, "published": true, "updatedAt": "2026-10-25T00:00:00.000Z"
+    },
+    {
+      "id": "p8", "title": "Luxterra Outdoors", "slug": "luxterra-outdoors",
+      "description": "Designed first. Refined in every detail. A premium outdoor living and landscape design website showcasing outdoor kitchens, hardscaping and pavers, water features and shade structures, 3D landscape design, outdoor fireplaces, and backyard remodeling.",
+      "image": "local:luxterraoutdoors",
+      "technologies": [], "category": "WordPress", "liveUrl": "https://luxterraoutdoors.com/", "githubUrl": "", "featured": false, "order": 5, "published": true, "updatedAt": "2026-10-25T00:00:00.000Z"
+    },
+    {
+      "id": "p9", "title": "Call Dr. Hardwood", "slug": "call-dr-hardwood",
+      "description": "A home improvement and flooring services website offering hardwood floor refinishing, floor care, cleaning, and related home renovation services.",
+      "image": "local:calldrhardwood",
+      "technologies": [], "category": "WordPress", "liveUrl": "https://calldrhardwood.com/", "githubUrl": "", "featured": false, "order": 6, "published": true, "updatedAt": "2026-10-25T00:00:00.000Z"
+    },
+    {
+      "id": "p10", "title": "Levitate Media", "slug": "levitate-media",
+      "description": "Video Production for Complex B2B Tech. Your technology may be complicated. Explaining why buyers need it should not be. A B2B technology video production website for AI, SaaS, FinTech, and MedTech companies.",
+      "image": "local:levitatefortech",
+      "technologies": [], "category": "Webflow", "liveUrl": "https://www.levitatefortech.com/", "githubUrl": "", "featured": false, "order": 7, "published": true, "updatedAt": "2026-10-25T00:00:00.000Z"
+    },
+    {
+      "id": "p11", "title": "Lourcey Photography", "slug": "lourcey-photography",
+      "description": "A professional portrait photography website specializing in children's portraits, family photography, senior portraits, and custom heirloom artwork.",
+      "image": "local:lourceyphoto",
+      "technologies": [], "category": "Webflow", "liveUrl": "https://www.lourceyphoto.com/", "githubUrl": "", "featured": false, "order": 8, "published": true, "updatedAt": "2026-10-25T00:00:00.000Z"
+    },
+    {
+      "id": "p12", "title": "One24", "slug": "one24",
+      "description": "An animated, interactive website showcasing modern web design and motion effects.",
+      "image": "local:one24",
+      "technologies": [], "category": "Webflow", "liveUrl": "https://one24.webflow.io/", "githubUrl": "", "featured": false, "order": 9, "published": true, "updatedAt": "2026-10-25T00:00:00.000Z"
+    }
+  ]
+}
