@@ -5,7 +5,7 @@ const path = require('path');
 const crypto = require('crypto');
 
 const PORT = process.env.PORT || 4000;
-const STORE = path.join(__dirname, 'data', 'portfolio.json');
+const STORE = path.join(__dirname, 'src', 'data', 'portfolio.json');
 const PASSWORD = process.env.ADMIN_PASSWORD || 'change-me-before-deploying';
 const SECRET = process.env.SESSION_SECRET || 'development-session-secret-change-me';
 const sessions = new Map();

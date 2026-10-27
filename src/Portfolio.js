@@ -1,15 +1,14 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { request } from './api';
+import portfolioData from './data/portfolio.json';
 import profile from './images/profile.png';
 import { projectImage } from './projectImages';
 gsap.registerPlugin(ScrollTrigger);
 const categories = ['All', 'React / Next.js', 'WordPress', 'Webflow', 'Vue.js'];
 
 export default function Portfolio() {
-  const [data, setData] = useState(null); const [filter, setFilter] = useState('All'); const root = useRef();
-  useEffect(() => { request('/portfolio').then(setData).catch(() => setData({ skills: [], experience: [], projects: [], settings: {} })); }, []);
+  const [data] = useState(portfolioData); const [filter, setFilter] = useState('All'); const root = useRef();
   useLayoutEffect(() => {
     if (!data || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const ctx = gsap.context(() => {
@@ -29,11 +28,10 @@ export default function Portfolio() {
   const projects = useMemo(() => (data?.projects || []).filter((project) => filter === 'All' || project.category === filter), [data, filter]);
   const grouped = useMemo(() => (data?.skills || []).reduce((all, skill) => ({ ...all, [skill.category]: [...(all[skill.category] || []), skill] }), {}), [data]);
   useLayoutEffect(() => { if (!data || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; const ctx = gsap.context(() => { gsap.from('.project', { autoAlpha: 0, y: 28, duration: .55, stagger: .11, scrollTrigger: { trigger: '.project-grid', start: 'top 86%', toggleActions: 'play reverse play reverse' } }); requestAnimationFrame(() => ScrollTrigger.refresh()); }, root); return () => ctx.revert(); }, [data, filter]);
-  if (!data) return <div className="loader">MR</div>;
   const { settings = {} } = data;
   return <main ref={root}>
     <nav className="nav"><a className="brand" href="#top">MR<span>.</span></a><div className="navlinks"><a href="#about">About</a><a href="#skills">Expertise</a><a href="#experience">Experience</a><a href="#projects">Work</a></div><a className="nav-cta" href="#contact">Let’s talk ↗</a></nav>
-    <section id="top" className="hero section"><div className="orb orb-one" /><div className="hero-eyebrow eyebrow">AVAILABLE FOR SELECT PROJECTS</div><div className="hero-grid"><div className="hero-copy"><p className="overline">{settings.headline}</p><h1>Interfaces with<br /><em>intention.</em></h1><p className="lede">{settings.intro}</p><div className="actions"><a className="button" href="#projects">Explore selected work ↓</a><a className="text-link" href={settings.linkedin} target="_blank" rel="noreferrer">LinkedIn ↗</a></div></div><div className="hero-portrait"><div className="portrait-glow" /><img src={profile} alt="Mohsan Raza" /></div><div className="hero-stat"><span className="stat-line" /><strong>04+</strong><p>years creating thoughtful web experiences across product, marketing, and commerce.</p></div></div></section>
+    <section id="top" className="hero section"><div className="orb orb-one" /><div className="hero-eyebrow eyebrow">AVAILABLE FOR SELECT PROJECTS</div><div className="hero-grid"><div className="hero-copy"><p className="overline">{settings.headline}</p><h1>Interfaces with<br /><em>intention.</em></h1><p className="lede">{settings.intro}</p><div className="actions"><a className="button" href="#projects">Explore selected work ↓</a><a className="text-link" href={settings.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div><div className="hero-portrait"><div className="portrait-glow" /><img src={profile} alt="Mohsan Raza" /></div><div className="hero-stat"><span className="stat-line" /><strong>04+</strong><p>years creating thoughtful web experiences across product, marketing, and commerce.</p></div></div></section>
     <section id="about" className="section about reveal"><p className="overline">01 / PROFILE</p><h2>A detail-led frontend partner for brands that care about how the web <em>feels.</em></h2><p>I combine clean engineering with a sharp eye for interaction, performance, and the journey between them. From flexible CMS builds to product interfaces, every decision is made to earn attention and make the next step feel obvious.</p></section>
     <section id="skills" className="section reveal"><div className="section-head"><p className="overline">02 / CAPABILITIES</p><h2>Tools, taste &amp; <em>technical range.</em></h2></div><div className="skill-grid">{Object.entries(grouped).map(([title, items]) => <article className="skill-group" key={title}><h3>{title}</h3><div>{items.sort((a, b) => a.order - b.order).map((skill) => <span key={skill.id}>{skill.name}</span>)}</div></article>)}</div></section>
     <section id="experience" className="section reveal"><div className="section-head"><p className="overline">03 / EXPERIENCE</p><h2>Building from the <em>inside out.</em></h2></div><div className="timeline">{data.experience.sort((a, b) => a.order - b.order).map((job) => <article className="job" key={job.id}><div className="job-meta"><span>{job.date}</span><strong>{job.company}</strong></div><div><h3>{job.title}</h3><ul>{job.responsibilities.map((line, index) => <li key={index}>{line}</li>)}</ul></div></article>)}</div></section>
