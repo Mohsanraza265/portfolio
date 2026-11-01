@@ -1,0 +1,400 @@
+
+/* ======================================
+   TESTIMONIALS — PREMIUM EDITORIAL
+====================================== */
+
+.tm-section {
+  --tm-dark: #14231e;
+  --tm-paper: #f5f6f1;
+  --tm-lime: #d5ff48;
+  --tm-muted: #65756b;
+
+  width: 100%;
+  padding: 115px 0 125px;
+  background: var(--tm-paper);
+  color: var(--tm-dark);
+  overflow: hidden;
+}
+
+.tm-container {
+  width: min(100% - 48px, 1180px);
+  margin: 0 auto;
+}
+
+/* Heading */
+
+.tm-heading {
+  margin-bottom: 48px;
+}
+
+.tm-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 25px;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--tm-muted);
+  text-transform: uppercase;
+}
+
+.tm-heading-line {
+  width: 35px;
+  height: 1px;
+  background: #cbd4cb;
+}
+
+.tm-heading h2 {
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 1.02;
+  letter-spacing: -0.055em;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tm-heading h2 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.06em;
+  color: #628775;
+}
+
+.tm-heading p {
+  margin-top: 22px;
+  max-width: 460px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--tm-muted);
+}
+
+/* Main card */
+
+.tm-card {
+  position: relative;
+  min-height: 370px;
+  background: var(--tm-dark);
+  color: #f5f6f1;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.tm-card:active {
+  cursor: grabbing;
+}
+
+.tm-card-inner {
+  display: flex;
+  flex-direction: column;
+  min-height: 370px;
+  padding: clamp(28px, 4.5vw, 65px);
+  will-change: transform, opacity;
+}
+
+.tm-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.tm-card-label {
+  color: var(--tm-lime);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.13em;
+}
+
+.tm-quote-symbol {
+  color: var(--tm-lime);
+  font-family: Georgia, serif;
+  font-size: 105px;
+  font-weight: 400;
+  line-height: 0.65;
+}
+
+/* Quote */
+
+.tm-quote {
+  max-width: 950px;
+  margin: 35px 0 55px;
+  padding: 0;
+  font-size: clamp(24px, 3.3vw, 45px);
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: -0.035em;
+  overflow-wrap: anywhere;
+}
+
+/* Author and project */
+
+.tm-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  margin-top: auto;
+  padding-top: 28px;
+  border-top: 1px solid rgba(255,255,255,0.16);
+}
+
+.tm-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  min-width: 0;
+}
+
+.tm-author-mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--tm-lime);
+  color: var(--tm-dark);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.tm-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tm-author-info strong,
+.tm-project strong {
+  font-size: 13px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.tm-author-info span {
+  font-size: 11px;
+  color: #a1b2a9;
+}
+
+.tm-project {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: right;
+}
+
+.tm-project > span {
+  color: #84988b;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+}
+
+/* Slider controls */
+
+.tm-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.tm-progress {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.tm-progress-item {
+  appearance: none;
+  flex: 1;
+  height: 20px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.tm-progress-item span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  border-radius: 3px;
+  background: #d0d8d0;
+  transition: background 0.3s ease;
+}
+
+.tm-progress-item.is-active span {
+  background: var(--tm-dark);
+}
+
+.tm-navigation {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tm-counter {
+  margin-right: 22px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-variant-numeric: tabular-nums;
+}
+
+.tm-counter span {
+  color: #9aaa9f;
+  margin: 0 5px;
+}
+
+.tm-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  padding: 0;
+  border: 1px solid #cfdbd0;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--tm-dark);
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.tm-arrow:hover {
+  background: var(--tm-dark);
+  color: white;
+  border-color: var(--tm-dark);
+  transform: translateY(-2px);
+}
+
+.tm-arrow-next {
+  background: var(--tm-lime);
+  border-color: var(--tm-lime);
+}
+
+.tm-arrow-next:hover {
+  background: var(--tm-dark);
+  border-color: var(--tm-dark);
+}
+
+.tm-arrow:focus-visible,
+.tm-progress-item:focus-visible {
+  outline: 2px solid #628775;
+  outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .tm-section {
+    padding: 85px 0;
+  }
+
+  .tm-container {
+    width: calc(100% - 40px);
+  }
+
+  .tm-card,
+  .tm-card-inner {
+    min-height: 340px;
+  }
+
+  .tm-quote {
+    font-size: clamp(23px, 3.8vw, 34px);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  .tm-section {
+    padding: 70px 0 80px;
+  }
+
+  .tm-container {
+    width: calc(100% - 32px);
+  }
+
+  .tm-heading {
+    margin-bottom: 35px;
+  }
+
+  .tm-heading h2 {
+    font-size: clamp(34px, 9vw, 46px);
+  }
+
+  .tm-heading p {
+    font-size: 13px;
+  }
+
+  .tm-eyebrow {
+    font-size: 9px;
+    gap: 9px;
+  }
+
+  .tm-card,
+  .tm-card-inner {
+    min-height: 400px;
+  }
+
+  .tm-card-inner {
+    padding: 27px 23px;
+  }
+
+  .tm-quote-symbol {
+    font-size: 72px;
+  }
+
+  .tm-quote {
+    font-size: clamp(22px, 5.8vw, 29px);
+    line-height: 1.35;
+    margin: 45px 0;
+  }
+
+  .tm-card-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .tm-project {
+    text-align: left;
+  }
+
+  .tm-controls {
+    gap: 15px;
+  }
+
+  .tm-progress {
+    max-width: none;
+  }
+
+  .tm-counter {
+    display: none;
+  }
+
+  .tm-arrow {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tm-arrow,
+  .tm-progress-item span {
+    transition: none;
+  }
+}

@@ -4,6 +4,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import portfolioData from './data/portfolio.json';
 import profile from './images/profile.png';
 import { projectImage } from './projectImages';
+import Testimonials from './components/Testimonials';
 gsap.registerPlugin(ScrollTrigger);
 const categories = ['All', 'React / Next.js', 'WordPress', 'Webflow', 'Vue.js'];
 
@@ -36,6 +37,7 @@ export default function Portfolio() {
     <section id="skills" className="section reveal"><div className="section-head"><p className="overline">02 / CAPABILITIES</p><h2>Tools, taste &amp; <em>technical range.</em></h2></div><div className="skill-grid">{Object.entries(grouped).map(([title, items]) => <article className="skill-group" key={title}><h3>{title}</h3><div>{items.sort((a, b) => a.order - b.order).map((skill) => <span key={skill.id}>{skill.name}</span>)}</div></article>)}</div></section>
     <section id="experience" className="section reveal"><div className="section-head"><p className="overline">03 / EXPERIENCE</p><h2>Building from the <em>inside out.</em></h2></div><div className="timeline">{data.experience.sort((a, b) => a.order - b.order).map((job) => <article className="job" key={job.id}><div className="job-meta"><span>{job.date}</span><strong>{job.company}</strong></div><div><h3>{job.title}</h3><ul>{job.responsibilities.map((line, index) => <li key={index}>{line}</li>)}</ul></div></article>)}</div></section>
     <section id="projects" className="section projects reveal"><div className="section-head"><p className="overline">04 / SELECTED WORK</p><h2>A few things I’ve helped <em>bring to life.</em></h2></div><div className="filters">{categories.map((category) => <button className={filter === category ? 'active' : ''} onClick={() => setFilter(category)} key={category}>{category}</button>)}</div><div className="project-grid">{projects.map((project) => <article className="project" key={project.id}><div className="project-image"><img src={projectImage(project.image)} alt={project.title} /><span>{project.category}</span></div><div className="project-info"><h3>{project.title}</h3><p>{project.description}</p><div className="tags">{project.technologies.map((tech) => <i key={tech}>{tech}</i>)}</div><div className="project-links">{project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noreferrer">Live site ↗</a>}{project.githubUrl && <a href={project.githubUrl} target="_blank" rel="noreferrer">GitHub ↗</a>}</div></div></article>)}</div>{!projects.length && <p className="empty">No published projects in this category yet.</p>}</section>
+    <Testimonials />
     <section id="contact" className="contact section reveal"><p className="overline">05 / CONTACT</p><h2>Have a good problem?<br /><em>Let’s solve it.</em></h2><a className="contact-email" href={`mailto:${settings.email}`}>{settings.email} <span>↗</span></a><div className="contact-bottom"><span>© {new Date().getFullYear()} {settings.name}</span><a href={settings.github} target="_blank" rel="noreferrer">GitHub ↗</a></div></section>
   </main>;
 }
